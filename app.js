@@ -6,20 +6,9 @@ updateList(objectFormat);
 
 
 function updateList(items){
- /* str = '';
-  for (let i=0; items.length>i; i++){
-    str+=`<li class="list-group-item">${items[i]}<p style="float:right; border:2px solid; border-radius:50%; padding: 1px 9px; background-color: red" data-key=${i}>X</p>`;
-  }
-document.querySelector('.list-group').innerHTML = str; 
-  
-  
-  // have tried this one, but each item on the list would have a comma in the end except the last item */
  document.querySelector('.list-group').innerHTML =
    items.map( i => `<li class="list-group-item">${i}<p style="float:right; border:2px solid; border-radius:50%; padding: 1px 9px; background-color: red" >X</p>`).join('')  
 }
-
-
-
 
 /* CREATE*/
 //add to do
