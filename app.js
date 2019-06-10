@@ -5,9 +5,8 @@ let objectFormat = JSON.parse(localStorage.getItem('localStorgeLabel')) || [];
 updateList(objectFormat);
 
 
-function updateList(items){
  document.querySelector('.list-group').innerHTML =
-   items.map( (i,idx) => `<li class="list-group-item">${i}<p style="float:right; border:2px solid; border-radius:50%; padding: 1px 9px; background-color: red" data-key=${idx}>X</p>`).join('')  
+   items.map( (i, idx) => `<li class="list-group-item">${i}<p style="float:right; border:2px solid; border-radius:50%; padding: 1px 9px; background-color: red" data-key=${idx}>X</p>`).join('')  
 }
 
 /* CREATE*/
